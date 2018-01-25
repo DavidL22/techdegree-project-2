@@ -22,16 +22,18 @@ h1 {
   margin-top: 0;
 }
 
+strong {
+  color: black;
+}
 /* Flexbox Layout - Navigation */
 
-.main-header, .nav {
+    /*header section*/
+.header-wrapper {
   display:flex;
   flex-direction: column;
+  background-color: #b1f5f5;
 }
 
-.main-header {
-  align-self:center;
-}
 .name {
   justify-content:space-around;
   align-self:center;
@@ -61,29 +63,25 @@ h1 {
   border-bottom-color: #52bab3;
 }
 
-.student-name, .nav-single {  
+  /*footer section*/
+
+.student-wrapper{
   display:flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
-
-.student-name{
-  margin: auto;
-}
-
+    
 .nav-single{
- justify-content:end;
- margin-top: 0;
-}
+   margin-bottom:0px;
+   align-items:center;
+   list-style:none;
+ }
 
-.nav-single li {
-  margin-right: .65em;
-  margin-left: .65em;
 }
 /* Layout Containers */
 
-.main-header {
+.header-wrapper {
   width: 100%;
-  background-color: #dff3e0;
+  background-color: #83bcbc;
 }
 
 .container {
