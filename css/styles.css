@@ -1,22 +1,35 @@
 styles.css
 
-/* base element styles */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-color: #222;
+color: rgb(51,51,51)
 font-size: 1em;
 line-height: 1.4;
 font-family: 'Slabo 27px', serif;
+font-weight: 500px;
 }
 
 body {
     width: 100%;
     margin: 0 auto;
+    background-color: #FFF;
 }
+
+header {
+  background-color: #b1f5f5;
+}
+
+footer {
+  background-color: #b1f5f5;
+}
+
+a { 
+text-decoration: none;
+ }
 
 h1 {
   margin-top: 0;
@@ -25,26 +38,33 @@ h1 {
 strong {
   color: black;
 }
-/* Flexbox Layout - Navigation */
 
-    /*header section*/
-.header-wrapper {
-  display:flex;
-  flex-direction: column;
-  background-color: #b1f5f5;
+ul {
+  margin:0;
+  padding:0;
+  list-style: none;
 }
 
-.name {
-  justify-content:space-around;
-  align-self:center;
- }
+/* ------------------Flexbox Layout ------------------------- */
+
+ .header-container, .nav {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.header-container{
+  justify-content: space-between;
+}
 
 .nav { 
-  padding: 5px 5px;
-  margin: 0 5px 15px 15px;
+  flex: 1;
+  align-self: center;
 }
 
-.nav li {
+/* Container elements */
+  .nav li {
   text-align: center;
   color: #222;
   background: #fff;
@@ -52,73 +72,62 @@ strong {
   padding: 5px 5px;
   list-style:none;
   border-radius: 10px;
+  width: 250px;
  }
-
-.nav a{
-  text-decoration: none;
-}
-
 .nav a:hover{
   color: red;
   border-bottom-color: #52bab3;
 }
 
-  /*footer section*/
+.banner {
+  display: flex;
+  flex-direction: column; 
+}
+
+.image-header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.description-1{
+  text-align:center;
+}
+
+.image {
+  width: 80%;
+  align-self:  center;
+  margin: 25px;
+}
 
 .student-wrapper{
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
     
 .nav-single{
-   margin-bottom:0px;
-   align-items:center;
    list-style:none;
- }
-
-}
-/* Layout Containers */
-
-.header-wrapper {
-  width: 100%;
-  background-color: #83bcbc;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
  }
 
 #portfolio{
   text-align:center;
   } 
 
-.img-div{
-    width: 80%;
-    margin: 0 auto;
-    }
-
-  .description {
+.project-title{
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  }
+
+.description {
+    text-align: center;
+    padding: 10px 20px;
     margin-top: 5px;
   }
-    .main-body {
-      background-color: white;
-    }
-
-.main-footer {
-  width: 100%;
-  background-color: grey;
-}
-
+   
 #contact{
   text-align:center;
-  margin-top: 0;
- }
+  margin: 0 auto;
+}
 
 .nav-single a {
   text-decoration:none;
@@ -127,45 +136,174 @@ strong {
 .nav-footer {
   display:none;
 }
- /* Media Queries */
 
-@media (min-width: 768px){
-.main-header{
-  justify-content: end;
-}
-.name
-
-.nav{
-  margin-top: 2em;
-  flex-direction: row; 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.nav a {
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.banner-2 {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.description-2 {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.banner-3 {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-single {
+  justify-content: center;
+}
+
+/* -------------------------Media Queries------------------------- */
+
+@media (min-width: 768px){
+.nav{
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav li {
+  background-color: transparent;
+  text-align: center;
+  color: #222;  
+  list-style:none;
+  width: 125px;
+  }
+  
+.banner, .image-header, .description-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+   
+.image-header {
+    width: 50%;
+    margin-right: 0 auto;
+    }
+
+.description-1 {
+    margin-left: 0 auto;
+    padding: 15px; 
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    flex: 1 300px;
+}
+
+.image {
+    margin-left: 25px;
+  }
+
+.project-title {
+  align-self;
+}
+
+.description {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.banner-2 {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.description-2 {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.banner-3 {
+  display:flex;
+  justify-content: space-between;
+  padding:0 30px;
+}
+
+.name-2{
+}
+
+.nav-single {
+  justify-content: center;
+}
 
 @media (min-width: 1024px){
 
-.main-header{
-    flex-direction: row;
+  .header-container, .nav {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   }
-  
-  .name {
-    margin: auto;
-  }
-  
-  .nav {
-      margin-top: 0;
-      align-self: center;
-}
-  
-  .nav li {
-    margin-left: .65em;
-    margin-right: .65em;
 
-/* This code corrects collapsed containers that occur from floats. */
-.group:after {
-  content: '';
-  display: table;
-  clear: both;
+  .name {
+    margin:30px;
+  }
+
+.nav { 
+  flex: 1;
+  justify-content: flex-end;
+  align-self: center;
+} 
+
+.banner-3 {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+.name-2{
+  margin: 30px;
+}
+
+.nav-single {
+  display: none;
+}
+
+.nav-footer {
+  display: flex;
+}
+
+.nav-footer li {
+  padding: 30px;
+  }
+ 
+
+
+
 
