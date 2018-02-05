@@ -31,6 +31,11 @@ a {
 text-decoration: none;
  }
 
+a:hover{
+  background-color: #c21bae;
+  font-size: 150%;
+}
+
 h1 {
   margin-top: 0;
 }
@@ -74,10 +79,6 @@ ul {
   border-radius: 10px;
   width: 250px;
  }
-.nav a:hover{
-  color: red;
-  border-bottom-color: #52bab3;
-}
 
 .banner {
   display: flex;
@@ -116,6 +117,7 @@ ul {
 
 .project-title{
     text-align: center;
+    color: #1085ec;
   }
 
 .description {
