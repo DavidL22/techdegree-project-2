@@ -7,11 +7,10 @@ styles.css
 }
 
 html {
-color: rgb(51,51,51)
+color: rgb(51,51,51);
 font-size: 1em;
 line-height: 1.4;
 font-family: 'Slabo 27px', serif;
-font-weight: 500px;
 }
 
 body {
@@ -44,10 +43,6 @@ ul {
   margin:0;
   padding:0;
   list-style: none;
-}
-
-hr{
-  color:;
 }
 
 /* ------------------Flexbox Layout ------------------------- */
@@ -201,11 +196,9 @@ hr{
    
 .image-header {
     width: 50%;
-    margin-right: 0 auto;
-    }
+ }
 
 .description-1 {
-    margin-left: 0 auto;
     padding: 15px; 
   }
 
@@ -222,10 +215,6 @@ hr{
 .image {
     margin-left: 25px;
   }
-
-.project-title {
-  align-self;
-}
 
 .description {
     text-align: center;
@@ -265,6 +254,7 @@ hr{
 
 .nav-single {
   justify-content: center;
+}
 }
 
 @media (min-width: 1024px){
@@ -308,7 +298,7 @@ hr{
 .nav-footer li {
   padding: 30px;
   }
- 
+ }
 
 
 
