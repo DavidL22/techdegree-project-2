@@ -99,13 +99,13 @@ ul {
 .image {
   width: 80%;
   align-self:  center;
-  margin-left: 30px;
 }
 
 .main-container {
   display:flex;
   flex-direction:column;
   justify-content: space-between;
+  text-align: center;
 }
 
 #portfolio{
@@ -176,7 +176,7 @@ ul {
 
 /* -------------------------Media Queries------------------------- */
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) {
  .nav{
   flex: 1;
   flex-direction: row;
@@ -211,11 +211,11 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    align-content: center;
+    text-align: center;
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
-    flex: 1 300px;
+    flex: 1 350px;
 }
 
 .image {
@@ -309,14 +309,11 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
-    flex: 1 350px;
+    text-align: center;
 }
 
 .image {
-    margin-left: 25px;
+    margin: 0 auto;
   }
 
 .description {
