@@ -39,6 +39,7 @@ a:hover strong{
 
 h1 {
   margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 strong {
@@ -94,7 +95,7 @@ ul {
 
 .description-1{
   text-align:center;
-}
+ }
 
 .image {
   width: 80%;
@@ -110,6 +111,7 @@ ul {
 
 #portfolio{
   text-align:center;
+  font-family: 'Montserrat', sans-serif;
   } 
 
 .project-title{
@@ -215,7 +217,7 @@ ul {
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
-    flex: 1 350px;
+    flex: 1 50%;
 }
 
 .image {
@@ -310,6 +312,10 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    flex: 1 30%;
 }
 
 .image {
