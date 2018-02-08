@@ -17,6 +17,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #FFF;
+    font-family: 'Bellefair', serif;
 }
 
 header {
@@ -31,8 +32,8 @@ a {
 text-decoration: none;
  }
 
-a:hover{
-  background-color: #c21bae;
+a:hover strong{
+  color:#828ee7;
   font-size: 150%;
 }
 
@@ -98,18 +99,14 @@ ul {
 .image {
   width: 80%;
   align-self:  center;
-  margin: 25px;
+  margin-left: 30px;
 }
 
-.student-wrapper{
+.main-container {
   display:flex;
+  flex-direction:column;
   justify-content: space-between;
-  align-items: center;
 }
-    
-.nav-single{
-   list-style:none;
- }
 
 #portfolio{
   text-align:center;
@@ -130,6 +127,10 @@ ul {
   text-align:center;
   margin: 0 auto;
 }
+
+.nav-single{
+   list-style:none;
+ } 
 
 .nav-single a {
   text-decoration:none;
@@ -166,6 +167,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #62717E;
+  padding:0 25px;
 }
 
 .nav-single {
@@ -174,8 +176,8 @@ ul {
 
 /* -------------------------Media Queries------------------------- */
 
-@media (min-width: 768px){
-.nav{
+@media (min-width: 768px) and (max-width: 1023px){
+ .nav{
   flex: 1;
   flex-direction: row;
   justify-content: space-around;
@@ -184,7 +186,7 @@ ul {
 .nav li {
   background-color: transparent;
   text-align: center;
-  color: #222;  
+  color: #828ee7;  
   list-style:none;
   width: 125px;
   }
@@ -208,6 +210,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
 }
 
 .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
@@ -215,7 +219,8 @@ ul {
 }
 
 .image {
-    margin-left: 25px;
+    margin: 0 auto;
+    padding: 10px 30px;
   }
 
 .description {
@@ -247,25 +252,33 @@ ul {
 
 .banner-3 {
   display:flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding:0 30px;
+  padding:0 20px;
 }
 
 .name-2{
+  margin:10px;
 }
 
 .nav-single {
-  justify-content: center;
+  display:none;
+}
+
+.nav-footer{
+  display: flex;
+}
+.nav-footer li{
+  padding: 0 20px;
 }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
   .header-container, .nav {
   display:flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   }
 
@@ -275,14 +288,46 @@ ul {
 
 .nav { 
   flex: 1;
-  justify-content: flex-end;
-  align-self: center;
 } 
+  .nav li {
+  color: #222;
+  background: none;
+  margin: 2.5px 2.5px 1px 1px;
+  padding: 0;
+  list-style:none;
+  border-radius: 0px;
+  width: 150px;
+ }
+
+
+.description-1 {
+    padding: 15px; 
+  }
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    flex: 1 350px;
+}
+
+.image {
+    margin-left: 25px;
+  }
+
+.description {
+    text-align: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+}
 
 .banner-3 {
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .name-2{
